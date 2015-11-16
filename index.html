@@ -1,56 +1,91 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-<head><title>Google</title>
-<style>
- ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden ;
-  } 
- li {
-       display: inline ;
-     }
-  a { 
-       width:80px;
-       text-decoration: none;
-       background-color: #dddddd;
+<head>
+  <title>Google</title>
+  <style>
+    .navbar {
+      margin: 0 ;
+      padding:0 ;
+      list-style-type: none;
+      float: right;
+    }
+    li {
+      display: inline;
+    }
+    a{
+      display: inline;
+      width: 60px ;
+      padding: 10px;
+      text-decoration: none;
+      color:black;
+    }
+  div.google-search{
+    padding: 100px;
   }
- img {
-     display:block ;
-     margin-left: auto;
-     margin-right : auto ;
-     padding: 50px 0px 50px 200px ;
-   }
- div.mata{
-   margin-left :0px ;
-   margin-right:100px ;
-   float :right ;
-   
-}
- div.cont {
-     position : absolute ;
-     bottom:0px ;
-   }
-</style>
+  img{
+    width: 400px;
+    height: 150px;
+  }
+  button {
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    background: #D2D2D2;
+    color: #615F5F;
+  }
+  button.new{
+    background-color: #0099ff;
+    border-radius: 5px;
+    color: white;
+  }
+  .footer-left{
+    padding: 1px;
+    float: left;
+    bottom: 0px;
+  }
+  .footer-right{
+    float: right;
+    bottom: 0px;
+  }
+  div.footer{
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 10px;
+    min-width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+  </style>
 </head>
 <body>
-<div class="mata">
-<ul>
-    <li><a href= "">Gmail</a></li>
-    <li><a href= "">Images</a></li>
-    <li><a href= "">Notifications</a></li>
+<div class="container">
+<ul class="navbar">
+  <li><a href="">Gmail</a></li>
+  <li><a href="">Images</a></li>
+  <li><button class="new" type="sub,it" name="button">Sign-in</button></li>
+</ul>
+<div class="google-search">
+ <center><img src="http://www.wired.com/wp-content/uploads/archive/images/slideshow/2008/02/google_logo/6_logo_predesign.jpg"><br>
+<form>
+  <input type="text" style="font-size:18px;height:35px;width:540px;" ><br/><br/><br/>
+  <button type= "submit" value="Google Search">Google Search</button>
+  <button type= "submit" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+</form>
+</center>
+</div>
+<div class="footer">
+<ul class="footer-left">
+  <li><a href="">Advertising</a></li>
+  <li><a href="">Business</a></li>
+  <li><a href="">About</a></li>
+</ul>
+<ul class="footer-right">
+  <li><a href="">Privacy</a></li>
+  <li><a href="">Terms</a></li>
+  <li><a href="">Settings</a></li>
+  <li><a href="">Use Google.com</a></li>
 </ul>
 </div>
-<img src ="http://www.wired.com/wp-content/uploads/archive/images/slideshow/2008/02/google_logo/6_logo_predesign.jpg"></img>
-
-<div class = "cont">
-<ul>
-    <li><a href= "">Advertising</a></li>
-    <li><a href= "">Business</a></li>
-    <li><a href= "">About</a></li>
-    <li><a href= "">settings</a></li>
-</ul>
 </div>
 </body>
 </html>
