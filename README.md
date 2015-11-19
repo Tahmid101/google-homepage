@@ -1,2 +1,2 @@
-THE ODIN PROJECT
-http://www.theodinproject.com
+The Odin Project
+#www.theodinproject.com
